@@ -1,0 +1,355 @@
+/*GENERAL*/
+
+body {
+    color: #323232;
+    background: #eeefed;
+    font-family: Dosis, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/*CONTACT*/
+
+.container::before,
+.group::before,
+.menu::before,
+.container::after,
+.group::after,
+.menu::after {
+    content: " ";
+    display: table;
+}
+
+.container::after,
+.goup::after,
+.menu::after {
+    clear: both;
+}
+
+#container {
+    margin-top: 48px;
+    background: #ffd6cf;
+}
+
+.container,
+.group,
+.menu {
+    *zoom: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+strong {
+    font-weight: 600;
+}
+
+.menu {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.menu li {
+    float: left;
+}
+
+.fa {
+    vertical-align: middle;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.contact-bar,
+.personal a {
+    color: white;
+    font-weight: 100;
+    font-family: auto;
+}
+
+.contact-bar {
+    background: #1E623B;
+    height: 84px;
+    font-size: 14px;
+}
+
+.personal {
+    margin-top: 29px;
+    float: left;
+}
+
+.social {
+    float: right;
+    padding-top: 17px;
+}
+
+.personal li {
+    margin-right: 48px;
+}
+
+.personal .fab,
+.personal .fas {
+    font-size: 28px;
+    margin-right: 5px;
+}
+
+.social .fab {
+    font-size: 17px;
+}
+
+.social-icon {
+    display: block;
+    width: 48px;
+    height: 48px;
+    line-height: 51px;
+    color: #989898;
+    background: #eeefed;
+    text-align: center;
+    border-radius: 2px;
+    margin-left: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+    color: #fff;
+    background: #9c743f;
+}
+
+
+/*NAVIGATION*/
+
+.nav-bar {
+    background: #f2f2f2
+}
+
+.logo {
+    float: left;
+    margin: 0
+}
+
+.logo a {
+    display: block;
+    background: url("../Foto/logo.png") 0 0 no-repeat;
+    background-size: 123px 122px;
+    width: 185px;
+    height: 116px;
+    text-indent: -9999px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.navigation {
+    float: right;
+}
+
+.navigation .fas {
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 28px;
+}
+
+.navigation li {
+    border-left: 1px solid #cecece
+}
+
+.navigation li:last-child {
+    border-right: 1px solid #cecece
+}
+
+.navigation a {
+    color: #434040;
+    display: block;
+    width: 136px;
+    height: 120px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/*když budu na určitý stránce, tak ať se to barevně odliší*/
+
+.selected a {
+    background-color: #ca978f;
+}
+
+.navigation a:hover,
+.navigation a:focus {
+    background-color: #bb857d;
+}
+
+
+/*ARTICLE*/
+
+.text-center {
+    text-align: center;
+}
+
+.post-header {
+    background: url("../Obrázky/background.jpg") center top no-repeat;
+    height: 166px;
+    background-size: 1405px auto
+}
+
+.post-title {
+    color: white;
+    font-size: 45px;
+    font-weight: 600;
+    background: #ca978f;
+    padding: 18px 46px;
+    border-radius: 7px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    margin-top: 36px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.post-content {
+    padding-bottom: 150px;
+}
+
+.post-content h2 {
+    font-weight: 400;
+    color: #323232;
+    font-size: 30px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.controls {
+    width: 794px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.controls a {
+    font-weight: 300;
+    color: #39a3d4;
+    text-transform: uppercase;
+    padding: 0 25px;
+    line-height: 48px;
+    display: block;
+}
+
+.controls a:hover,
+.controls a:focus,
+.controls .selected a {
+    background: #39a3d4;
+    color: white;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.gallery img {
+    width: 355px;
+    margin: 0 17.5px;
+    height: 354px;
+    padding-bottom: 25px;
+}
+
+.gallery {
+    font-size: 0
+}
+
+.gallery ul {
+    padding: 0;
+}
+
+
+/*FOOTER*/
+
+.pre-footer {
+    color: white;
+    background: #323232;
+    text-align: center;
+}
+
+.pre-footer .container {
+    width: 460px;
+    padding: 40px 0 60px 0;
+}
+
+.pre-footer p {
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.pre-footer strong {
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: none;
+}
+
+.pre-footer .personal li {
+    margin-right: 0;
+}
+
+.pre-footer .personal li:first-child {
+    margin-right: 60px;
+}
+
+footer {
+    font-size: 14px;
+}
+
+footer .container {
+    background: url("../Pokemoni/ostatní/logo.png") left center no-repeat;
+    background-size: 65px 65px;
+}
+
+footer p {
+    color: #a6a6a6;
+    float: left;
+    padding-left: 200px;
+}
+
+f footer p a {
+    color: #e75652;
+    font-weight: 600;
+}
+
+footer p,
+footer .menu {
+    margin: 32px 0 32px 0;
+}
+
+footer .menu {
+    color: #989898;
+    font-weight: 600;
+    text-transform: uppercase;
+    float: right;
+}
+
+footer .menu a {
+    color: #989898;
+}
+
+footer .menu a:hover,
+footer .menu a:hover {
+    text-decoration: underline;
+}
+
+footer .menu li:after {
+    color: #989898;
+    content: "/";
+    margin: 0 8px
+}
+
+footer .menu li:last-child:after {
+    content: "";
+}
